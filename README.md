@@ -1,5 +1,11 @@
 # Base-Converter
 
-This program converts a number from one base to another. The user enters in the number, current base, and 
-the desired base. The desired base must be between 2 and 32. The program then outputs the number in the form 
-of its new base. 
+## Problem Statement
+Create a program that takes a number and a base, and then converts that number using a new base from the user input. The program allows for any base change from 2 to 32. Uses the new base entered by the user and math calculations to convert the original number into the new number of the new base.
+
+## Developer Documentation
+This program consists of two main files and a Junit file for test purposes. BaseConversion.java is where the calculations for the program take place. There are 4 variables within this class, 1 constructor and two methods. The variables store the originalNum, originalBase, newBase, and the newNum. The constructor takes in the first three variables as parameters and assigns a value to newNum within the constructor. The method is the Convert() method, this method does the math calculations to convert the base of the old number and returns the new number as a string. Convert() is called within the constructor to set newNum to the new number value. The other method is a print() method that just prints the newNum.
+The second file is the BaseConversionDriver file. This class uses BaseConversion and tests it. There are two methods outside of the main function that are used in this class. CheckBase() takes in the integer value of the base that was input and checks to see if it is between 2 and 32. The second method is the CheckNum() method, it takes in the string num value and the original base as parameters. This method checks whether that number is a valid number within that base. Both methods return a boolean that is used within the main function to control the loop
+
+## User Documentation
+After running the code, inside the terminal, there will be a prompt for "Enter original number" click next to the prompt and enter your original number. If you entered a valid number it will prompt you for the base of the original number. Enter the original base and if the original number is in that base it will prompt for the base you would like to convert it to. Enter a new base and press enter. After you have received your new number it will prompt you to choose whether or not you want to convert another number, enter your answer, and press enter.
